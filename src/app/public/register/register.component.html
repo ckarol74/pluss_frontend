@@ -1,0 +1,83 @@
+<!-- contenido del diálogo aquí -->
+<!-- <div class="dialog"> -->
+<div mat-dialog-content class="pt-1">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-6 text-primary">
+        <p class="mb-0">Formulario de</p>
+        <h6 class="fw-bold">Registro</h6>
+      </div>
+      <div class="col-6 d-flex">
+        <img
+          src="../../../assets/png/pluss-original.png"
+          alt="Logo Pluss"
+          class="img-fluid ms-auto logo"
+        />
+      </div>
+    </div>
+    <form [formGroup]="registerForm" class="row">
+      <mat-form-field class="col-12 mt-3" appearance="outline">
+        <mat-label>Ingrese su Usuario</mat-label>
+        <input type="text" matInput formControlName="nombres" />
+        <mat-error
+          *ngIf="registerForm.controls['nombres'].hasError('required')"
+        >
+          Nombre requerido
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="col-6 mt-3" appearance="outline">
+        <mat-label>Primer Apellido</mat-label>
+        <input type="text" matInput formControlName="primerApellido" />
+      </mat-form-field>
+      <mat-form-field class="col-6 mt-3" appearance="outline">
+        <mat-label>Segundo Apellido</mat-label>
+        <input type="text" matInput formControlName="segundoApellido" />
+      </mat-form-field>
+      <mat-form-field class="col-6 mt-3" appearance="outline">
+        <mat-label>Número de Celular</mat-label>
+        <input type="text" matInput formControlName="segundoApellido" />
+      </mat-form-field>
+      <mat-form-field class="col-6 mt-3" appearance="outline">
+        <mat-label>Sexo</mat-label>
+        <input type="text" matInput formControlName="segundoApellido" />
+      </mat-form-field>
+      <div class="d-flex mt-1">
+        <button
+          type="submit"
+          mat-fab
+          extended
+          color="primary"
+          (click)="dialogRef.close(false)"
+          class="mx-auto"
+        >
+          Registrar
+        </button>
+        <button
+          type="submit"
+          mat-fab
+          extended
+          color="white"
+          (click)="dialogRef.close(false)"
+          class="mx-auto"
+        >
+          Salir
+        </button>
+      </div>
+    </form>
+    <div class="card backgound-color mt-4 mb-3">
+      <div class="card-body">
+        <div
+          class="col-lg-8 mx-auto d-flex align-self-center align-items-center"
+        >
+          <p class="mb-0 mx-auto text-primary">Continuar con:</p>
+          <div class="social-btns mx-auto">
+            <a class="btn btn-social facebook mx-2"
+              ><i class="bi bi-facebook"></i></a
+            ><a class="btn btn-social google"><i class="bi bi-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->

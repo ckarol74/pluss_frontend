@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg bg-white mat-elevation-z5 fixed-top">
+  <div class="container">
+    <a class="navbar-brand">
+      <img
+        src="../../../assets/png/logo.png"
+        alt="Logo"
+        width="30"
+        height="24"
+        class="d-inline-block align-text-top" />
+      <img
+        src="../../../assets/png/title.png"
+        alt="Logo"
+        width="85"
+        height="40"
+        class="d-inline-block align-text-top ms-1"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active text-primary fw-bold">INICIO</a>
+        <a class="nav-link text-primary me-5">COMERCIOS</a>
+        <button
+          mat-fab
+          extended
+          color="primary"
+          class="me-2"
+          (click)="onLogin()"
+        >
+          INICIAR SESION
+        </button>
+        <button
+          mat-fab
+          extended
+          color="white"
+          class="text-primary"
+          (click)="onRegister()"
+        >
+          REGISTRARSE
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<div class="footer text-center">
+  <div class="container">
+    <div class="row py-5 mb-0">
+      <div class="col-lg-4 d-flex">
+        <img
+          src="../../../assets/png/pluss-original.png"
+          alt="Logo Pluss"
+          width="200"
+          class="img-fluid m-auto"
+        />
+      </div>
+      <div class="col-lg-4 text-primary">
+        <h6>Contactos</h6>
+        <p class="mb-0"><small>La Paz: 625 77777-69835964</small></p>
+        <p><small>Santa Cruz: 71019595</small></p>
+        <h6>Contactos</h6>
+        <p class="mb-0">
+          <small
+            >Av. Arce Esq. Fernando Guachalla #2177 Real Plaza Hotel &
+            Convention Center Piso 7 Of. 709</small
+          >
+        </p>
+      </div>
+      <div class="col-lg-4 text-primary">
+        <h6><a>Comercios Asociados</a></h6>
+        <h6><a>Registro</a></h6>
+        <h6 class="mb-3"><a>Iniciar Sesión</a></h6>
+        <h6>Redes Sociales</h6>
+        <div class="social-btns mx-auto">
+          <a class="btn btn-social facebook"><i class="bi bi-facebook"></i></a
+          ><a class="btn btn-social instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a class="btn btn-social youtube"><i class="bi bi-youtube"></i></a>
+          <a class="btn btn-social tiktok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

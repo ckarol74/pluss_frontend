@@ -1,0 +1,38 @@
+.mt {
+  position: relative;
+  display: inline-block;
+  margin-top: 4.3rem;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.content {
+  position: absolute;
+  top: 35%;
+  right: 16%;
+  width: 16rem;
+  @media screen and (max-width: 1286px) {
+    right: 14.2%;
+  }
+  @media screen and (max-width: 1095px) {
+    right: 12.3%;
+  }
+}
+
+#first {
+  width: 100%;
+  height: auto;
+}
+
+#second {
+  height: 35rem;
+  width: auto;
+}
+
+#text-about {
+  padding-left: 8rem;
+}
+
+// #banner {
+//   height: 25rem;
+// }
